@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContentLogic">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ciiim"
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="52dp"
+                    app:layout_constraintBottom_toTopOf="@+id/favou"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/favou"
+                    android:layout_width="69dp"
+                    android:layout_height="56dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toTopOf="@id/tempp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/pn"
+                    app:layout_constraintTop_toBottomOf="@id/ciiim"
+                    app:srcCompat="@drawable/fav" />
+
+                <TextView
+                    android:id="@+id/fa1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="292dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="click to add favourite"
+
+                    app:layout_constraintBottom_toTopOf="@+id/tempp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/favou" />
+
+                <TextView
+                    android:id="@+id/pn"
+                    android:layout_width="250dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="220dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="40sp"
+                    android:paddingTop="40sp"
+
+                    android:text="TextView"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tempp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ciiim"
+                    app:layout_constraintVertical_bias="0.39" />
+
+                <TextView
+                    android:id="@+id/cppp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:paddingHorizontal="30sp"
+                    android:paddingBottom="20sp"
+                    android:textStyle="italic"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tempp" />
+
+                <TextView
+                    android:id="@+id/tempp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="30sp"
+                    android:paddingRight="30sp"
+                    android:text="Temperanent:"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pn" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+
+                    android:orientation="vertical"
+                    android:paddingHorizontal="30sp"
+                    android:paddingTop="0sp"
+                    android:paddingBottom="100sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cppp">
+
+                    <TextView
+                        android:id="@+id/orror"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Origin:" />
+
+                    <TextView
+                        android:id="@+id/lipp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/favourites" />
+
+                    <TextView
+                        android:id="@+id/wght"
+                        android:layout_width="match_parent"
+                        android:textStyle="italic"
+                        android:layout_height="wrap_content"
+                        android:text="Weight:" />
+
+                    <TextView
+                        android:id="@+id/dgF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Dog Friendliness:"
+                       />
+
+                    <TextView
+                        android:id="@+id/wikiLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Wikipedia Link:" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

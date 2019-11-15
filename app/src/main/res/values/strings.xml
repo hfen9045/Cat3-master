@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">work3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favourites">Favourites</string>
+    <string name="cat_wiki">Cat wiki</string>
+    <string name="myfavourite">myfavourite</string>
+</resources>
